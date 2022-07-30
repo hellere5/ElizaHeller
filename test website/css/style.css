@@ -1,0 +1,381 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+background-color: #737373;
+font-size: 18px;
+margin: 0;
+padding: 0;
+}
+
+h1{
+font-size: 75px;
+line-height: 1;
+text-align: center;
+font-weight: bold;
+}
+
+h2{
+font-size: 32px;
+line-height: 1.5;
+}
+
+nav ul{
+list-style-type: none;
+}
+
+nav li{
+display: inline;
+padding-right: 20px;
+padding-bottom: 100px;
+}
+
+nav{
+background-color: #ddd;
+padding: 25px 0;    
+text-align: left; 
+}
+
+header#main h2{
+  color: black;
+  font-size: 50px;
+  padding: 0 50px;
+  text-align: left;
+  font-weight: bold;
+  }
+
+header#main p{
+color: black;
+font-size: 26px;
+padding: 0 50px;
+text-align: left;
+font-style: italic;
+}
+
+footer{
+background-color: black;
+color: white;
+padding-top: 30px;
+text-align: center;
+}
+
+
+
+nav a{
+color: black;
+font-weight: bold;
+text-decoration: none;
+}
+nav a:hover {
+text-decoration: underline;
+}
+
+
+.skip a{
+background: white;
+left: 0;
+padding: 6px;
+-webkit-transition: top 1s ease-out;
+transition: top 1s ease-out;
+z-index: 1;
+
+position: absolute;
+top: -40px;
+}
+
+.skip a:focus {
+position: absolute;
+top: 20px
+}
+
+*:focus {
+border-style: solid;
+border-width: 2px
+}
+
+
+.container{
+display: grid;
+grid-template-columns: 1fr 5fr 1fr;
+grid-template-rows: repeat(5, auto);
+grid-row-gap: 15px;
+}
+
+
+header#main{
+background-attachment: fixed; 
+background-position: center;
+background-size: cover; 
+height: 400px; 
+grid-column: 1 / -1;
+grid-row: 1 / auto;
+background-image: url("../images/self.JPG");
+/* background-image: url("../images/eliza_written.png"); */
+background-repeat: no-repeat;
+text-align: center;
+}
+
+.about-image{
+grid-column: 1 / span 3;
+max-height: 700px;
+overflow: hidden;
+grid-row: 2 / span 1;
+}
+
+.about{
+grid-column: 2 / span 1;
+grid-row: 2 / span 1;
+}
+
+.method-image{
+grid-column: 1 / span 3;
+max-height: 700px;
+overflow: hidden;
+grid-row: 3 / span 1;
+}
+
+.method{
+grid-column: 2 / span 1;
+grid-row: 3 / span 1;
+}
+
+.clients-image{
+grid-column: 1 / span 3;
+max-height: 700px;
+overflow: hidden;
+grid-row: 4 / span 1;
+}
+
+.clients{
+grid-column: 2 / span 1;
+grid-row: 4 / span 1;
+}
+
+.contact-image{
+grid-column: 1 / span 3;
+max-height: 700px;
+overflow: hidden;
+grid-row: 5 / span 1;
+}
+
+.contact{
+grid-column: 2 / span 1;
+grid-row: 5 / span 1;
+}
+
+
+.text-block{
+background-color: rgba(255, 255, 255, .8);
+border: 10px solid black;
+padding: 30px;
+align-content: center;
+margin-right: auto;
+margin-left: auto;
+align-self: center;
+}
+
+form {
+  border: 3px solid #000000;
+  padding: 25px;
+  margin: auto;
+  background: #c1bfbf;
+	-moz-border-radius: 2%;
+	-webkit-border-radius: 2%;
+	border-radius: 2%;
+	width: 85%;
+}
+
+legend{ 
+  font-weight: bolder;
+  font-size: 30px;
+  text-decoration:  underline;
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding-bottom: 5px;
+}
+
+label{
+  font-weight: bolder;
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 5px;
+  font-size: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-size: 22px;
+  border-radius: 25px;
+}
+span{
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+textarea{
+  width: 100%;
+  height: 30vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-size: 22px;
+  border-radius: 25px;
+}
+
+input[type=checkbox]{
+  display:inline;
+  width:inherit;
+}
+
+input[type=submit] {
+  background-color: #918b8c;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+  box-shadow: 0 8px #666666;
+  transform: translateY(4px);
+}
+
+
+@media screen and (min-width: 800px){
+nav{
+  padding: 30px 0;
+
+  /* Your code here */
+  margin: auto;
+  text-align: right;
+  align-self: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 50px auto 500px auto 50px;
+  grid-template-rows: repeat(5, 400px);
+}
+
+
+.about-image{
+  grid-column: 1 / span 2;
+}
+
+.about{
+  grid-column: 3 / span 2;
+}
+
+.method-image{
+  grid-column: 3 / span 2;
+}
+
+.method{
+  grid-column: 1 / span 2;
+}
+
+.clients-image{
+  grid-column: 1 / span 2;
+}
+
+.clients{
+  grid-column: 3 / span 2;
+}
+
+.contact-image{
+  grid-column: 3 / span 2;
+}
+
+.contact{
+  grid-column: 1 / span 2;
+}
+
+.new{
+  padding: 30px;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  }
+
+.new1{
+  padding: 30px;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.new2{
+  padding: 30px;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.resume{
+  padding-top: 30px;
+  grid-row: 1;
+  font-size: 25px;
+  grid-column: 2 / span 2;
+  text-align: center;
+}
+
+.resume-image{
+  grid-row: 1 / span 1;
+  padding-top: 85px;
+  grid-column: 2 / span 2;
+}
+
+.resume2{
+  grid-row: 4;
+  font-size: 25px;
+  grid-column: 2 / span 2;
+  text-align: center;
+}
+
+}
+
+
+
+@media screen and (prefers-reduced-motion: reduce){
+html{
+    scroll-behavior: auto; 
+}
+
+.skip a{
+  -webkit-transition: initial; 
+  transition: initial; 
+}
+
+header{
+  background-attachment: initial;
+}
+}
+
+.container{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 750px) {
+.container{   
+  grid-template-columns: repeat(4, 1fr);
+}
+}
+/* 
+@media screen and (min-width: 950px) {
+ .container{
+    grid-template-columns: repeat(6, 1fr); 
+ }
+} */
