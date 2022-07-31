@@ -37,6 +37,14 @@ padding: 25px 0;
 text-align: left; 
 }
 
+nav img{
+  float: left;
+  height: 50px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+
 header#main h2{
   color: black;
   font-size: 50px;
@@ -307,20 +315,20 @@ nav{
 
 .new{
   padding: 30px;
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 1;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
   }
 
 .new1{
   padding: 30px;
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 1;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 4;
 }
 
 .new2{
   padding: 30px;
   grid-column: 1 / span 2;
-  grid-row: 3 / span 1;
+  grid-row: 3 / span 4;
 }
 
 .resume{
@@ -329,19 +337,111 @@ nav{
   font-size: 25px;
   grid-column: 2 / span 2;
   text-align: center;
+  /* color: #ffffff; */
 }
 
 .resume-image{
   grid-row: 1 / span 1;
   padding-top: 85px;
-  grid-column: 2 / span 2;
+  padding-right: 85px;
+  padding-left: 175px;
+  grid-column: 1 / span 4;
 }
 
 .resume2{
   grid-row: 4;
-  font-size: 25px;
+  padding-top: 300px;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: underline;
   grid-column: 2 / span 2;
   text-align: center;
+}
+
+.sports1{
+  grid-row: 5 / span 1;
+  padding-left: 50px;
+  grid-column: 1 / span 1;
+}
+
+.sports2{
+  grid-row: 5 / span 1;
+  padding-left: 25px;
+  padding-right: 25px;
+  grid-column: 2 / span 1;
+}
+
+.sports3{
+  grid-row: 5 / span 1;
+  grid-column: 4 / span 1;
+  padding-right: 50px;
+}
+
+.sports4{
+  grid-row: 5 / span 1;
+  grid-column: 3 / span 1;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.travel1{
+  grid-row: 6 / span 1;
+  padding-left: 50px;
+  grid-column: 1 / span 1;
+}
+
+.travel2{
+  grid-row: 6 / span 1;
+  padding-left: 25px;
+  padding-right: 25px;
+  grid-column: 2 / span 1;
+}
+
+.travel3{
+  grid-row: 6 / span 1;
+  grid-column: 4 / span 1;
+  padding-right: 50px
+}
+
+.travel4{
+  grid-row: 6 / span 1;
+  grid-column: 3 / span 1;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.food1{
+  grid-row: 7 / span 1;
+  padding-left: 50px;
+  grid-column: 1 / span 1;
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+
+.food2{
+  grid-row: 7 / span 1;
+  padding-left: 25px;
+  padding-right: 25px;
+  grid-column: 2 / span 1;
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+
+.food3{
+  grid-row: 7 / span 1;
+  grid-column: 4 / span 1;
+  padding-right: 50px;
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+
+.food4{
+  grid-row: 7 / span 1;
+  grid-column: 3 / span 1;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 75px;
+  padding-bottom: 20px;
 }
 
 }
